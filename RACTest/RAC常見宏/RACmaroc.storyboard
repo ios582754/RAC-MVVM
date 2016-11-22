@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5mp-SY-MQR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Maroc View Controller-->
+        <scene sceneID="GJX-wn-twB">
+            <objects>
+                <viewController id="5mp-SY-MQR" customClass="MarocViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GM1-tm-ukx"/>
+                        <viewControllerLayoutGuide type="bottom" id="9yP-tH-yYg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="za7-4O-rwY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000000000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ic7-0h-tDc">
+                                <rect key="frame" x="203" y="95" width="220" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fa3-7K-V9Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Fa3-7K-V9Q"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Fa3-7K-V9Q"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Cq-Aa-AVF">
+                                <rect key="frame" x="203" y="220" width="220" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WIt-SN-Hl1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WIt-SN-Hl1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WIt-SN-Hl1"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ic7-0h-tDc" firstAttribute="centerX" secondItem="za7-4O-rwY" secondAttribute="centerX" id="EWC-oP-J5E"/>
+                            <constraint firstItem="Ic7-0h-tDc" firstAttribute="leading" secondItem="6Cq-Aa-AVF" secondAttribute="leading" id="O1M-cm-lqa"/>
+                            <constraint firstItem="Ic7-0h-tDc" firstAttribute="trailing" secondItem="6Cq-Aa-AVF" secondAttribute="trailing" id="ej5-ze-f9f"/>
+                            <constraint firstItem="6Cq-Aa-AVF" firstAttribute="top" secondItem="Ic7-0h-tDc" secondAttribute="bottom" constant="20" id="nBm-Gr-xTf"/>
+                            <constraint firstItem="Ic7-0h-tDc" firstAttribute="top" secondItem="GM1-tm-ukx" secondAttribute="bottom" constant="76" id="wii-w5-5R4"/>
+                            <constraint firstItem="Ic7-0h-tDc" firstAttribute="leading" secondItem="za7-4O-rwY" secondAttribute="leadingMargin" constant="70" id="yTR-tM-yCE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EWC-oP-J5E"/>
+                                <exclude reference="O1M-cm-lqa"/>
+                                <exclude reference="ej5-ze-f9f"/>
+                                <exclude reference="wii-w5-5R4"/>
+                                <exclude reference="yTR-tM-yCE"/>
+                                <exclude reference="nBm-Gr-xTf"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="EWC-oP-J5E"/>
+                                <include reference="O1M-cm-lqa"/>
+                                <include reference="ej5-ze-f9f"/>
+                                <include reference="wii-w5-5R4"/>
+                                <include reference="yTR-tM-yCE"/>
+                                <include reference="nBm-Gr-xTf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Ic7-0h-tDc" id="dm6-VI-ypG"/>
+                        <outlet property="textField" destination="6Cq-Aa-AVF" id="WGi-S6-5BS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EwA-lR-eGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="186"/>
+        </scene>
+    </scenes>
+</document>
